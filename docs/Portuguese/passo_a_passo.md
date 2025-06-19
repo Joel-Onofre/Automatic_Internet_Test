@@ -37,7 +37,8 @@ Primeiramente, veja o documento de pré requisistos para que você tenha o ambie
 
 - Será necessário alterar as seguintes variáveis:
 
-IP_ZABBIX = Insira o Ip do seu servidor zabbix, caso o script seja executado no mesmo local do seu servidor, insira 127.0.0.1
+IP_ZABBIX = Insira o Ip do seu servidor zabbix, caso o script seja executado no mesmo local do seu servidor, insira 127.0.0.1 
+
 HOST_ZABBIX = Insira o nome do Host que você criou no zabbix que irá receber as informações do script. Obs: mantenha as aspas "".
 
 ```
