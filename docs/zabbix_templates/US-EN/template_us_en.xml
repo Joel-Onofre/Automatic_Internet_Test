@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>7.0</version>
+    <template_groups>
+        <template_group>
+            <uuid>7df96b18c230490a9a0a9e2307226338</uuid>
+            <name>Templates</name>
+        </template_group>
+    </template_groups>
+    <templates>
+        <template>
+            <uuid>92f95573c18c49f799f6e32f4b60d19c</uuid>
+            <template>Internet Test</template>
+            <name>Internet Test</name>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <items>
+                <item>
+                    <uuid>d6fd3e3ea8694c22abd4a63633fb29fb</uuid>
+                    <name>Ip</name>
+                    <type>TRAP</type>
+                    <key>speedtest.client_ip</key>
+                    <delay>0</delay>
+                    <value_type>TEXT</value_type>
+                    <trends>0</trends>
+                </item>
+                <item>
+                    <uuid>9e3a61b946114d2980d4806b5a17291c</uuid>
+                    <name>Download Speed</name>
+                    <type>TRAP</type>
+                    <key>speedtest.download</key>
+                    <delay>0</delay>
+                    <units>Mbps</units>
+                    <description>Provider download speed</description>
+                </item>
+                <item>
+                    <uuid>41f003ece2b14135ac8be6b79cbeadbe</uuid>
+                    <name>ISP</name>
+                    <type>TRAP</type>
+                    <key>speedtest.isp</key>
+                    <delay>0</delay>
+                    <value_type>TEXT</value_type>
+                    <trends>0</trends>
+                </item>
+                <item>
+                    <uuid>6dfe42cc030a43219d33fd8f961d5bc1</uuid>
+                    <name>Latency</name>
+                    <type>TRAP</type>
+                    <key>speedtest.latency</key>
+                    <delay>0</delay>
+                    <units>ms</units>
+                </item>
+                <item>
+                    <uuid>e5f18e6839bc47bbbfcbe2b1c3b7e071</uuid>
+                    <name>Ping</name>
+                    <type>TRAP</type>
+                    <key>speedtest.ping</key>
+                    <delay>0</delay>
+                    <units>ms</units>
+                </item>
+                <item>
+                    <uuid>bce1fd41180d4e7293e63891f1a217d3</uuid>
+                    <name>Provider City</name>
+                    <type>TRAP</type>
+                    <key>speedtest.server_city</key>
+                    <delay>0</delay>
+                    <value_type>TEXT</value_type>
+                    <trends>0</trends>
+                </item>
+                <item>
+                    <uuid>0d487892a8b94e3582e4ad870a5f2687</uuid>
+                    <name>Host Server</name>
+                    <type>TRAP</type>
+                    <key>speedtest.server_host</key>
+                    <delay>0</delay>
+                    <value_type>TEXT</value_type>
+                    <trends>0</trends>
+                </item>
+                <item>
+                    <uuid>2294a59b9a6d462b96d69740fd8938bf</uuid>
+                    <name>Upload Speed</name>
+                    <type>TRAP</type>
+                    <key>speedtest.upload</key>
+                    <delay>0</delay>
+                    <units>Mbps</units>
+                    <description>Link upload speed</description>
+                </item>
+            </items>
+        </template>
+    </templates>
+</zabbix_export>
