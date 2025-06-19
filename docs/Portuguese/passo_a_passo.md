@@ -4,7 +4,9 @@ Primeiramente, veja o documento de pré requisistos para que você tenha o ambie
 
 # Manual
 
-1. Com acesso ao seu servidor zabbix (Ubuntu/Debian), realize a instalação dos seguintes pacotes:
+1. Acesse o seu painel do zabbix, crie um Host e adicione o template disponibilizado no repositório.
+
+2. Com acesso ao seu servidor zabbix (Ubuntu/Debian), realize a instalação dos seguintes pacotes:
 
 - Crie um Host e adicione o template disponibilizado no repositório
 
@@ -12,24 +14,24 @@ Primeiramente, veja o documento de pré requisistos para que você tenha o ambie
 
 > https://www.speedtest.net/pt/apps/cli
 
-``
+```
 >sudo apt-get update -y
 >sudo apt-get install -y speedtest-cli
-``
+```
 
 - Zabbix sender
 
-``
+```
 >sudo apt-get update -y
 > sudo apt-get install zabbix-sender
-``
+```
 
 - Jq
 
-``
+```
 >sudo apt-get update -y
 >sudo apt-get install -y jq
-``
+```
 
 2. Após isso crie o script que irá executar o teste de velocidade e enviar os dados para o seu servidor zabbix
 
@@ -38,7 +40,7 @@ Primeiramente, veja o documento de pré requisistos para que você tenha o ambie
 IP_ZABBIX = Insira o Ip do seu servidor zabbix, caso o script seja executado no mesmo local do seu servidor, insira 127.0.0.1
 HOST_ZABBIX = Insira o nome do Host que você criou no zabbix que irá receber as informações do script. Obs: mantenha as aspas "".
 
-``
+```
 # Executa o teste e captura o JSON
 RESULT=$(speedtest --json)
 
@@ -61,7 +63,7 @@ zabbix_sender -z IP_ZABBIX -s "HOST_ZABBIX" -k speedtest.server_host -o "$SERVER
 zabbix_sender -z IP_ZABBIX -s "HOST_ZABBIX" -k speedtest.server_city -o "$SERVER_CITY"
 zabbix_sender -z IP_ZABBIX -s "HOST_ZABBIX" -k speedtest.isp -o "$ISP"
 zabbix_sender -z IP_ZABBIX -s "HOST_ZABBIX" -k speedtest.client_ip -o "$IP"
-``
+```
 
 3. Após isso, salve o arquivo com a extensão ".sh"
 
@@ -83,9 +85,9 @@ chmod +x "Nome do arquivo"
 
 1. Acesse o seu servidor zabbix, crie um Host e adicione o template disponibilizado no repositório.
 
-2. No terminal do seu servidor, crie o seguinte script com a extensão ".sh".
+2. No terminal do seu servidor, crie o seguinte script com a extensão ".sh". 
 
-``
+```
 #!/bin/bash
 
 echo "Iniciando a instalação das dependências..."
@@ -155,6 +157,6 @@ else
 fi
 
 echo "Script gerado com sucesso: $ARQUIVO"
-``
+```
 
 3. Acesse o seu painel do zabbix e verifique o recebimento dos dados
