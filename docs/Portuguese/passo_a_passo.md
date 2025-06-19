@@ -6,9 +6,7 @@ Primeiramente, veja o documento de pré requisistos para que você tenha o ambie
 
 1. Acesse o seu painel do zabbix, crie um Host e adicione o template disponibilizado no repositório.
 
-2. Com acesso ao seu servidor zabbix (Ubuntu/Debian), realize a instalação dos seguintes pacotes:
-
-- Crie um Host e adicione o template disponibilizado no repositório
+2. Com acesso ao seu servidor zabbix (Ubuntu/Debian), realize a instalação das seguintes dependências:
 
 - Speedtest CLI
 
