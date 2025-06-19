@@ -61,7 +61,6 @@ zabbix_sender -z IP_ZABBIX -s "HOST_ZABBIX" -k speedtest.server_host -o "$SERVER
 zabbix_sender -z IP_ZABBIX -s "HOST_ZABBIX" -k speedtest.server_city -o "$SERVER_CITY"
 zabbix_sender -z IP_ZABBIX -s "HOST_ZABBIX" -k speedtest.isp -o "$ISP"
 zabbix_sender -z IP_ZABBIX -s "HOST_ZABBIX" -k speedtest.client_ip -o "$IP"
-
 ``
 
 3. Após isso, salve o arquivo com a extensão ".sh"
