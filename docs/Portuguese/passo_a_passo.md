@@ -6,7 +6,7 @@ Primeiramente, veja o documento de pré requisistos para que você tenha o ambie
 
 1. Acesse o seu painel do zabbix, crie um Host e adicione o template disponibilizado no repositório.
 
-![Host](docs/imgs/Host_zabbix.png)
+![Host](imgs/Host_zabbix.png)
 
 3. Com acesso ao seu servidor zabbix (Ubuntu/Debian), realize a instalação das seguintes dependências:
 
