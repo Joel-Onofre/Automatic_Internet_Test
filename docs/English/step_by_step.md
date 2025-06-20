@@ -82,7 +82,7 @@ chmod +x "Filename"
 
 6. Access your Zabbix dashboard and verify data reception.
 
-# Automático
+# Automatic
 
 1. Access your Zabbix server, create a Host, and add the template provided in this repository.
 
