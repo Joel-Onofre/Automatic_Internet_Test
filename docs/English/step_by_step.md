@@ -6,7 +6,9 @@ First, check the prerequisites document to ensure your environment is properly c
 
 1. Access your Zabbix dashboard, create a Host, and add the template provided in this repository.
 
-2. With access to your Zabbix server (Ubuntu/Debian), install the following packages:
+![Host](../imgs/Host_zabbix.png)
+
+3. With access to your Zabbix server (Ubuntu/Debian), install the following packages:
 
 - Speedtest CLI
 
